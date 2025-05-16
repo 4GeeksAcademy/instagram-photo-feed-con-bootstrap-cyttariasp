@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instgram photo feed con bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <div>
+                    <i class="fa-brands fa-instagram fs-4 text"></i>
+                    <a class="navbar-brand">Instagram</a>
+                </div>
+                <form class="d-flex">
+                    <button type="button" class="btn btn-primary mx-1 bg-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Caption:
+                                        </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                                            placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-light border">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light border">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary bg-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><a class="dropdown-item text-danger border-top" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">
+                <i class="fa-solid fa-table"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">
+                <i class="fa-regular fa-square"></i>
+            </button>
+        </li>
+    </ul>
+    <div class="container-fluid">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://www.nps.gov/common/uploads/cropped_image/secondary/F70B9AEA-E2F8-2AFC-35918AAD38A62C92.jpeg"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:917,cw:3597,ch:3597,q:80,w:3597/aSFaRjH2UffnnDd2Tq8zHF.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://media.cntraveler.com/photos/5de82878d606100008e7414f/1:1/w_2443,h_2443,c_limit/The-Milky-Way_GettyImages-147851475.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://photographylife.com/wp-content/uploads/2021/05/DSC_3080MW.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://static1.squarespace.com/static/55487d42e4b0222458d0efc1/t/60f38d4e81f38b205889ac62/1626574158482/theRockPool.jpg?format=2500w"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.squarespace-cdn.com/content/v1/63ceaffd33529a45e572bf90/1674497150577-RW9T2Z37G4A4LQGN7BPL/Mikko-Lagerstedt-Killpi-9.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://shootitwithfilm.com/wp-content/uploads/2023/01/Nighttime-Photography-Cheat-Sheet-by-Jen-Golay-on-Shoot-It-With-Film-13.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://thorindustries-prod.zaneray.com/cms/images/5cde8a35-f06b-406e-bad4-5dec2edae1fc_shutterstock_511631872.jpg?auto=compress,format&rect=465,0,1869,1869&w=800&h=800"
+                            class="img-fluid my-1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://1.bp.blogspot.com/-RET3jzHjUdI/Xd2Z3zO_bVI/AAAAAAAAE-g/m9gTuElmcasdxzCVfI7QrKs6wmFpwW6zQCLcBGAsYHQ/s1600/image10.jpg"
+                            class="img-fluid my-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Sky Night</h5>
+                            <h6 class="card-subtitle text-muted">1/1</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://www.nps.gov/common/uploads/cropped_image/secondary/F70B9AEA-E2F8-2AFC-35918AAD38A62C92.jpeg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">204 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Milky Way</h5>
+                            <h6 class="card-subtitle text-muted">2/2</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:917,cw:3597,ch:3597,q:80,w:3597/aSFaRjH2UffnnDd2Tq8zHF.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">100 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Stars</h5>
+                            <h6 class="card-subtitle text-muted">1/3</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://media.cntraveler.com/photos/5de82878d606100008e7414f/1:1/w_2443,h_2443,c_limit/The-Milky-Way_GettyImages-147851475.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">302 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Sky Night Mountains</h5>
+                            <h6 class="card-subtitle text-muted">2/4</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://photographylife.com/wp-content/uploads/2021/05/DSC_3080MW.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">144 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Awesome Milky Way</h5>
+                            <h6 class="card-subtitle text-muted">3/5</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://static1.squarespace.com/static/55487d42e4b0222458d0efc1/t/60f38d4e81f38b205889ac62/1626574158482/theRockPool.jpg?format=2500w"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">255 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Borealis</h5>
+                            <h6 class="card-subtitle text-muted">1/6</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://images.squarespace-cdn.com/content/v1/63ceaffd33529a45e572bf90/1674497150577-RW9T2Z37G4A4LQGN7BPL/Mikko-Lagerstedt-Killpi-9.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">276 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Star Trail</h5>
+                            <h6 class="card-subtitle text-muted">2/7</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://shootitwithfilm.com/wp-content/uploads/2023/01/Nighttime-Photography-Cheat-Sheet-by-Jen-Golay-on-Shoot-It-With-Film-13.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">257 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Night</h5>
+                            <h6 class="card-subtitle text-muted">4/8</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://thorindustries-prod.zaneray.com/cms/images/5cde8a35-f06b-406e-bad4-5dec2edae1fc_shutterstock_511631872.jpg?auto=compress,format&rect=465,0,1869,1869&w=800&h=800"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">248 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-auto mx-auto my-3">
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body d-flex justify-content-between">
+                            <h5 class="card-title">Last Sky</h5>
+                            <h6 class="card-subtitle text-muted">1/9</h6>
+                        </div>
+                        <div class="img-fluid">
+                            <img src="https://1.bp.blogspot.com/-RET3jzHjUdI/Xd2Z3zO_bVI/AAAAAAAAE-g/m9gTuElmcasdxzCVfI7QrKs6wmFpwW6zQCLcBGAsYHQ/s1600/image10.jpg"
+                                class="card-img-top img-fluid" alt="sky-night">
+                        </div>
+                        <div>
+                            <p class="m-1 fw-bold">299 likes</p>
+                            <p class="card-text m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                tempora debitis inventore explicabo quasi sit, itaque at quas commodi accusamus
+                                temporibus perferendis voluptatem libero et deserunt. Quibusdam, magni? Temporibus,
+                                ducimus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f38b3293eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
